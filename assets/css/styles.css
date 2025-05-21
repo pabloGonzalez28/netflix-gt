@@ -88,6 +88,7 @@ a {
   gap: 15px;
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .tag{
