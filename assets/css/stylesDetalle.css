@@ -1,0 +1,308 @@
+@font-face {
+  font-family: Netnet1;
+  src: url('../../font/AvenirNextCondensed.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Netnet2;
+  src: url('../../font/AvenirNext.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Netnet3;
+  src: url('../../font/Avenir.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: black;
+  color: white;
+  margin: 0;
+}
+
+.back-icon{
+  padding-top: 23px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+}
+
+.movie-video{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.movie-tittle {
+  font-family: Netnet2;
+  margin-top: 25px;
+  margin-left: 17px;
+  margin-bottom: 26px;
+  margin-right: 17px;
+
+}
+
+.movie-specifications {
+  margin: 17px;
+  font-family: Netnet3;
+  font-size: 17px;
+
+}
+
+.tags {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.tag-match {
+  color: #46d369;
+  font-weight: bold;
+}
+
+.tag-year {
+  color: #606060;
+}
+
+
+.tag-rating {
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Netnet2;
+  background: #505050;
+  border-radius: 2px;
+}
+
+.tag-duration {
+  color: #606060;
+}
+
+.tag-quality {
+  border: 1px solid #ccc;
+  padding: 3px 3px;
+  border-radius: 2px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 17px;
+  margin-top: 25px;
+  margin-bottom: 22px;
+  font-family: Netnet3;
+}
+
+.button-play {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.button-play::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.icon-play::before {
+  background: url(../../icons/play.svg);
+}
+
+.button-download {
+  background: #404040;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-download::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background: url(../../icons/download.svg);
+}
+
+.synopsis {
+  margin: 17px;
+  margin-bottom: 20px;
+  font-family: Netnet3;
+  font-size: 15px;
+  text-align: justify;
+  color: #dad4d3;
+}
+
+.movie-people {
+  margin: 17px;
+  margin-bottom: 20px;
+  font-family: Netnet3;
+  font-size: 11px;
+  color: #707070;
+}
+.cast {
+  margin-bottom: -4px;
+}
+.mas{
+  font-weight: bold;
+}
+
+.buttons-actions {
+  margin: 17px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: Netnet3;
+}
+
+.button-mylist {
+  background: black;
+  color: #707070;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-mylist::before {
+  content: '';
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background: url(../../icons/plus.svg);
+}
+
+.button-like {
+  color: #707070;
+  background: black;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-like::before {
+  content: '';
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background: url(../../icons/like.svg);
+}
+
+.button-share {
+  color: #707070;
+  background: black;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-share::before {
+  content: '';
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background: url(../../icons/email-send.svg);
+}
+
+.list {
+  margin: 17px;
+  margin-bottom: 0;
+}
+
+.list-tittle {
+  border-top: 5px solid #ea4d33;
+  padding-top: 13px;
+  margin-top: 8px;
+  display: inline-block;
+  width: fit-content;
+  font-family: Netnet2;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  white-space: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  padding: 1em 0 0;
+  font-family: Netnet3;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  padding-bottom: 1em;
+}
+
+.footer-list a{
+  color: gray;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-item {
+  text-align: center;
+  font-size: .9em;
+}
+
+.footer-item svg {
+  display: block;
+  margin: auto;
+}
+
+.footer-item path {
+  fill: gray;
+}
+
+.footer-item:hover :is(path, span){
+  fill: white;
+  color: white;
+}
